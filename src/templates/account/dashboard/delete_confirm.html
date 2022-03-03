@@ -1,0 +1,13 @@
+{% extends "../sub_base.html" %}
+{% block title %}Account Deleted{% endblock %}
+{% block content %}
+
+<div class="container">
+    <div>
+        <h3 class="mb-4 fw-bold">Account Deleted</h3>
+        <p>You have now deleted your account.</p>
+        <a href="{% url 'account:register' %}">Register another account?</a>
+    </div>
+</div>
+                    
+{% endblock %}
