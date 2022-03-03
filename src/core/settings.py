@@ -1,4 +1,6 @@
 import os
+import environ
+
 from pathlib import Path
 import django
 from django.utils.encoding import force_str
@@ -102,10 +104,18 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 # Basket session ID
 BASKET_SESSION_ID = 'basket'
 
+
 # Stripe payment
-# PUBLISHABLE_KEY = ''
-# SECRET_KEY = ''
-STRIPE_ENDPOINT_SECRET = 'whsec_f973c94d3e4cf49d20a8a056a27a9ee623217a4d8b04ba37078a2f1e5f07bd53'
+env = environ.Env()
+# reading .env file
+environ.Env.read_env()
+STRIPE_SECRET_KEY = env("SECRET_KEY")
+STRIPE_PUB_KEY = env("PUB")
+
+
+
+
+
 # stripe listen --forward-to localhost:8000/payment/webhook/  this is importat command we need to tell stripe where to send data after confirmed payment
 
 # Custom user model

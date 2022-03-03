@@ -1,3 +1,5 @@
+
+
 /* Bootstrap Over-ride */
 @media (min-width: 1000px){
     .container{
@@ -70,6 +72,8 @@ html, body, p, div{
         width: 70px;
     }
 }
+
+
 
 /* Footer */
 
