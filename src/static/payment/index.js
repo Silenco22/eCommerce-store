@@ -1,7 +1,11 @@
 //'use strict';
 
 
+<<<<<<< HEAD
 var stripe = Stripe(STRIPE_PUB_KEY);
+=======
+var stripe = Stripe('');
+>>>>>>> 24429681acc209271c59761812871721189cd8a2
 
 var elem = document.getElementById('submit');
 // collects clientsecret from the 'Pay' button

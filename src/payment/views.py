@@ -21,7 +21,11 @@ def BasketView(request):
     total = total.replace('.', '')
     total = int(total)
     
+<<<<<<< HEAD
     stripe.api_key = settings.STRIPE_SECRET_KEY
+=======
+    stripe.api_key = ''
+>>>>>>> 24429681acc209271c59761812871721189cd8a2
     intent = stripe.PaymentIntent.create(
         amount=total,
         currency='gbp',

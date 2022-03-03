@@ -106,6 +106,7 @@ BASKET_SESSION_ID = 'basket'
 
 
 # Stripe payment
+<<<<<<< HEAD
 env = environ.Env()
 # reading .env file
 environ.Env.read_env()
@@ -116,6 +117,11 @@ STRIPE_PUB_KEY = env("PUB")
 
 
 
+=======
+# PUBLISHABLE_KEY = ''
+# SECRET_KEY = ''
+STRIPE_ENDPOINT_SECRET = ''
+>>>>>>> 24429681acc209271c59761812871721189cd8a2
 # stripe listen --forward-to localhost:8000/payment/webhook/  this is importat command we need to tell stripe where to send data after confirmed payment
 
 # Custom user model
