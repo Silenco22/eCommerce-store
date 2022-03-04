@@ -1,0 +1,11 @@
+Package list
+#####
+
+django 
+balck (optional)
+isort (optional)
+six
+pillow
+stripe
+coverage
+django-mptt (django modified preorder tree traversal, helps with tables where we have large hijerahiju of categories for example)
