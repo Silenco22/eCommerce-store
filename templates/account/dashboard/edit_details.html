@@ -1,7 +1,7 @@
 {% extends "../sub_base.html" %}
 {% block title %}Edit Profile{% endblock %}
 {% block sub_content %}
-
+<div class="col-6 mx-auto"> 
 <form class="account-form px-4 pt-4" method="post" enctype="multipart/form-data">
 
     {% if user_form.is_valid %}
@@ -41,5 +41,5 @@
     <button type="submit" role="button"
         class="btn btn-danger btn-block py-2 mb-4 mt-5 fw-bold w-100">Yes, delete.</button>
 </form>
-                   
+</div>                 
 {% endblock %}

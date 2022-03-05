@@ -14,10 +14,17 @@ urlpatterns = [
     path('activate/<slug:uidb64>/<slug:token>/', views.account_activate, name='activate'),
     # User dashboard
     path('dashboard/', views.dashboard, name='dashboard'),
+    path('orders/', views.orders, name='orders'),
     path('profile/edit/', views.edit_details, name='edit_details'),
     path('profile/delete_user/', views.delete_user, name='delete_user'),
         #we dont make view for this url just template
     path('profile/delete_confirm/', TemplateView.as_view(template_name="account/dashboard/delete_confirm.html"), name='delete_confirmation'),
+    #ADRESSES
+    path("addresses/", views.view_address, name="addresses"),
+    path("add_address/", views.add_address, name="add_address"),
+    path("addresses/edit/<slug:id>/", views.edit_address, name="edit_address"),
+    path("addresses/delete/<slug:id>/", views.delete_address, name="delete_address"),
+    path("addresses/set_default/<slug:id>/", views.set_default, name="set_default"),
     #PASSWORD RESET URLS(part of django auth views):
     path('password_reset/', auth_views.PasswordResetView.as_view(template_name="account/password_reset/password_reset_form.html",
                                                                  success_url='password_reset_email_confirm',
