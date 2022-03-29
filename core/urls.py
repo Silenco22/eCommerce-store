@@ -14,7 +14,7 @@ urlpatterns = [
     path('', include('store.urls', namespace='store')),
     path('basket/', include('basket.urls', namespace='basket')),
     path('account/', include('account.urls', namespace='acocunt')),
-    path('payment/', include('payment.urls', namespace='payment')),
+    path('checkout/', include('checkout.urls', namespace='checkout')),
     path('orders/', include('orders.urls', namespace='orders')),
     path("__debug__/", include(debug_toolbar.urls)),
     

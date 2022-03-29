@@ -57,7 +57,11 @@
         <div class="card mb-3 border-0">
           <div class="row g-0">
             <div class="col-md-2 d-none d-md-block">
-              <img class="img-fluid" style="width:90px" src="{{item.product.image.url}}" />
+            {% for image in item.product.product_image.all %}
+            {% if image.is_feature %}
+            <img class="img-fluid" alt="Responsive image" src="{{ image.image.url }}" alt="{{ image.image.alt_text }}">
+            {% endif %}
+            {% endfor %}
             </div>
             <div class="col-md-10">
               <div class="card-body p-1">

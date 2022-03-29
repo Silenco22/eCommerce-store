@@ -33,7 +33,7 @@ INSTALLED_APPS = [
     'store',
     'basket',
     'account',
-    'payment',
+    'checkout',
     'orders',
     'mptt',
 ]
@@ -129,18 +129,6 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 BASKET_SESSION_ID = 'basket'
 
 
-# Stripe payment
-env = environ.Env()
-# reading .env file
-environ.Env.read_env()
-STRIPE_SECRET_KEY = env("SECRET_KEY")
-STRIPE_PUB_KEY = env("PUB")
-
-
-
-
-
-# stripe listen --forward-to localhost:8000/payment/webhook/  this is importat command we need to tell stripe where to send data after confirmed payment
 
 # Custom user model
 AUTH_USER_MODEL = 'account.Customer'

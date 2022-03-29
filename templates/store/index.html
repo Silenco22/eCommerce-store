@@ -1,5 +1,16 @@
 {% extends "base.html" %} {% block title %}eKupi{% endblock %} 
 {% block content %}
+<style>
+  .thumbnail:hover {
+    position:relative;
+    top:-25px;
+    left:-35px;
+    width:300px;
+    height:auto;
+    display:block;
+    z-index:999;
+}
+  </style>
 
 <div class="container">
   <div class="alert alert-primary fw600 rounded-0 border-0 py-3" role="alert">
@@ -36,7 +47,7 @@
             <div class="card border-0">
               {% for image in product.product_image.all %}
               {% if image.is_feature %}
-                <img class="img-fluid" alt="Responsive image" src="{{ image.image.url }}"
+                <img class="thumbnail" height="125" width="175" alt="Responsive image" src="{{ image.image.url }}"
                 alt="{{ image.image.alt_text }}">
               {% endif %}
               {% endfor %}

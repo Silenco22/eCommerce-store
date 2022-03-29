@@ -41,8 +41,8 @@ def edit_details(request):
 
 def account_register(request):
 
-    # if request.user.is_authenticated:
-    #     return redirect('/')
+    if request.user.is_authenticated:
+        return redirect('/')
     
     if request.method == 'POST':
         registerForm = RegistrationForm(request.POST)
@@ -82,6 +82,7 @@ def account_activate(request, uidb64, token):
     else:
         return render(request, 'account/registration/activation_invalid.html')
 
+@login_required
 def orders(request):
     orders = user_orders(request)
     return render(request,'account/dashboard/orders.html', {'orders': orders})
@@ -129,4 +130,14 @@ def delete_address(request, id):
 def set_default(request, id):
     Address.objects.filter(customer=request.user, default=True).update(default=False) #set all customers addresses to default = False
     Address.objects.filter(pk=id, customer=request.user).update(default=True) # set praticular customer address with id to default = true
+    
+    previous_url = request.META.get("HTTP_REFERER") # gets the site that we came from and saves its url in the variable, we need that while selecting default address in the checkout process
+
+    if "delivery_address" in previous_url: # if string delivery_address in the url that we got then redirect us to delivery address
+        return redirect("checkout:delivery_address")
+
     return redirect("account:addresses")   
+
+
+
+    

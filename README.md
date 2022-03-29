@@ -5,7 +5,7 @@ Ecommerce store
 Functionalities:
   User managment (authentication, password reset)
   Basket/shopping (Adding itmes, Updating and deleting items form Basket, Checkout)
-  Payment (stripe integration)
+  Payment (paypal integration)
   Orders setup (view all orders made)
 
 Home screen
@@ -41,19 +41,19 @@ Payment
 ![payment](https://user-images.githubusercontent.com/77300331/155759687-3faf4a9c-4b30-479c-af9e-42d6775eab84.png)
 
 
-Stripe payment
+Paypal payment
 
-![stripePayment](https://user-images.githubusercontent.com/77300331/155759725-9fd1afe5-b2b0-4890-be0e-f3872b60e375.png)
+
 
 
 Order palcemnt
 
-![orderPlacement](https://user-images.githubusercontent.com/77300331/155759775-03df9647-852d-4154-b17a-395cbd2056fe.png)
+
 
 
 Orders
 
-![orders](https://user-images.githubusercontent.com/77300331/155759790-ae860b9e-1df5-497c-9a56-3c093887ee8b.png)
+
 
 
 PasswordReset
