@@ -39,14 +39,21 @@ Shopping cart
 
 Payment
 
-![payment](https://user-images.githubusercontent.com/77300331/157465984-29e41da9-c23e-4793-a380-3071df62218a.png)
+
+![checkout](https://user-images.githubusercontent.com/77300331/160612948-59b2a08b-edda-4744-8ae2-bf8ce860e2e4.png)
+
+![addressChoose](https://user-images.githubusercontent.com/77300331/160612817-97dd5381-a631-4124-8ebb-6fd9e2fefe75.png)
+
+
 
 Paypal payment
 
 
 
+![paypal](https://user-images.githubusercontent.com/77300331/160612682-2a54d86d-85d9-4d74-898a-776bf768cceb.png)
 
-Order palcemnt
+
+![paypal2](https://user-images.githubusercontent.com/77300331/160612710-5ab95398-5b34-417f-9d7f-408d20246b6e.png)
 
 
 
@@ -54,6 +61,7 @@ Order palcemnt
 Orders
 
 
+![orders](https://user-images.githubusercontent.com/77300331/160612762-7ef2723b-ced3-478c-8c14-8bdc165de25b.png)
 
 
 PasswordReset
