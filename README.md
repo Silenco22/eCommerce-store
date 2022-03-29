@@ -1,6 +1,5 @@
-Ecommerce store 
+#Ekupi (light) 
 
-#setup Stripe secret key before starting, otherwise payment wont work#
 
 Functionalities:
   User managment (authentication, password reset)
@@ -10,11 +9,12 @@ Functionalities:
 
 Home screen
 
-![home](https://user-images.githubusercontent.com/77300331/155759383-59dab64d-a61d-4319-9704-57333971ca7c.png)
+![homepage](https://user-images.githubusercontent.com/77300331/157465790-24e070af-b914-4e53-8730-964788a90aaf.png)
+
 
 login
 
-![login](https://user-images.githubusercontent.com/77300331/155759427-190e6c3c-c59d-47fa-9fcf-5ad5fb716dbf.png)
+![login](https://user-images.githubusercontent.com/77300331/157465833-6c2a6165-5473-4164-8c09-e2d9e29fab2b.png)
 
 register
 
@@ -23,12 +23,13 @@ register
 
 dashboard
 
-![dahsboard](https://user-images.githubusercontent.com/77300331/155759513-83b25264-03bc-4159-b5a1-653104bdd44e.png)
+![account](https://user-images.githubusercontent.com/77300331/157465908-2b292d1a-5855-40f1-84c5-899bd9de9532.png)
+
 
 
 Single Product
 
-![singleProduct](https://user-images.githubusercontent.com/77300331/155759569-c0aca13e-fcc7-4eb8-9d69-296b43d5af0a.png)
+![singelProduct](https://user-images.githubusercontent.com/77300331/157465953-80d741d8-0671-4191-8982-cd0f054206f2.png)
 
 
 Shopping cart
@@ -38,8 +39,7 @@ Shopping cart
 
 Payment
 
-![payment](https://user-images.githubusercontent.com/77300331/155759687-3faf4a9c-4b30-479c-af9e-42d6775eab84.png)
-
+![payment](https://user-images.githubusercontent.com/77300331/157465984-29e41da9-c23e-4793-a380-3071df62218a.png)
 
 Paypal payment
 
